@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Career Decision Maker</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-light">
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Career Decision Maker</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link fw-semibold" href="intro.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold" href="index.html">Quiz</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold" href="roadmap.html">Roadmap</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold" href="admin.html">Admin</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-4">
+
+  <!-- Name field -->
+  <label class="fw-bold">Enter Your Name / உங்கள் பெயர்:</label>
+  <input type="text" class="form-control mb-4" id="userName" placeholder="Your Name">
+
+  <div class="card shadow-lg p-4 rounded-4">
+    <h2 class="text-center mb-4 fw-bold">✨ Career Decision Maker ✨</h2>
+
+    <div class="progress mb-4">
+      <div class="progress-bar" id="progressBar" style="width:0%">0%</div>
+    </div>
+
+    <form id="quizForm">
+      <div id="questionContainer"></div>
+
+      <button class="btn btn-primary w-100 mt-3" id="findCareer" type="button">
+        Find My Career <i class="fa-solid fa-arrow-right"></i>
+      </button>
+
+      <button class="btn btn-secondary w-100 mt-2" id="resetQuiz" type="button">
+        Retake Quiz <i class="fa-solid fa-rotate"></i>
+      </button>
+    </form>
+
+    <div class="card mt-4 p-3 d-none" id="resultCard">
+      <h4 id="careerResult"></h4>
+      <p id="confidenceText"></p>
+      <p id="careerDesc"></p>
+
+      <ul id="skillList"></ul>
+
+      <p id="switchPlan"></p>
+
+      <button class="btn btn-success w-100 mt-3" id="goRoadmap">
+        View Roadmap <i class="fa-solid fa-location-dot"></i>
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+<script src="script.js" defer></script>
+
+</body>
+<br><br>
+<footer class="bg-dark text-light pt-5 pb-3">
+  <div class="container">
+    <div class="row text-center text-md-start">
+
+      <!-- PROJECT INFO -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Career Decision Maker</h5>
+        <p class="text-secondary">
+          A smart career guidance tool to help students choose the right career path.
+        </p>
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Quick Links</h5>
+        <ul class="list-unstyled">
+  <li>
+    <a href="./intro.html" class="footer-link">
+      <i class="bi bi-house-door me-2"></i>Home
+    </a>
+  </li>
+
+  <li>
+    <a href="./index.html" class="footer-link">
+      <i class="bi bi-question-circle me-2"></i>Quiz
+    </a>
+  </li>
+
+  <li>
+    <a href="./roadmap.html" class="footer-link">
+      <i class="bi bi-map me-2"></i>Roadmap
+    </a>
+  </li>
+
+  <li>
+    <a href="./admin.html" class="footer-link">
+      <i class="bi bi-person-gear me-2"></i>Admin
+    </a>
+  </li>
+</ul>
+
+      </div>
+
+      <!-- CONTACT -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Connect</h5>
+        <p class="text-secondary mb-2">
+          <i class="bi bi-person-fill me-2"></i>Developed by Jeni
+        </p>
+        <p class="text-secondary mb-2">
+          <i class="bi bi-envelope-fill me-2"></i>jeni@email.com
+        </p>
+
+        <div>
+          <i class="bi bi-github fs-4 me-3"></i>
+          <i class="bi bi-linkedin fs-4 me-3"></i>
+          <i class="bi bi-instagram fs-4"></i>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="border-secondary">
+
+    <div class="text-center text-secondary">
+      © 2026 Career Decision Maker | All Rights Reserved
+    </div>
+  </div>
+</footer>
+
+</html>
